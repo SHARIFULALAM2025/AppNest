@@ -18,27 +18,33 @@ const Banner = () => {
 
                 <p className="font-normal text-xs banner overflow-hidden">
                   At HERO.IO , we craft innovative apps designed to make
-                  everyday life simpler, smarter, and more exciting.Our
-                  goal is to turn your ideas into digital experiences that truly
-                  make an impact.
+                  everyday life simpler, smarter, and more exciting.Our goal is
+                  to turn your ideas into digital experiences that truly make an
+                  impact.
                 </p>
               </div>
             </div>
             <div className="flex justify-center items-center">
               <div className="flex  items-center gap-3">
-                <button className="flex items-center md:px-16 md:py-8 rounded border-[rgba(210,210,210,1)] border-2 gap-3">
+                <a
+                  href="https://play.google.com/store/games?hl=en"
+                  className="flex items-center md:px-16 md:py-8 rounded-[4px]  border-[rgba(210,210,210,1)] border-2 gap-3"
+                >
                   <figure>
                     <img src="../playStore.png" alt="" />
                   </figure>
                   Google Play
-                </button>
-                <button className="flex items-center md:px-16 md:py-8 rounded border-[rgba(210,210,210,1)] border gap-3">
+                </a>
+                <a
+                  href="https://www.apple.com/app-store/"
+                  className="flex items-center md:px-16 md:py-8 rounded-[4px] border-[rgba(210,210,210,1)] border-2 gap-3"
+                >
                   {' '}
                   <figure>
                     <img src="../appIcon.png" alt="" className="" />
                   </figure>
                   App Store
-                </button>
+                </a>
               </div>
             </div>
             <div className="flex justify-center items-center">

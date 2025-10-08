@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { navList } from './NavData'
-import { Link, NavLink,  } from 'react-router'
+import { Link, NavLink } from 'react-router'
 import '../../App.css'
 import { FaAlignJustify } from 'react-icons/fa'
 import { RxCross2 } from 'react-icons/rx'
@@ -12,29 +12,30 @@ const Navbar = () => {
     setToggle(!toggle)
   }
 
-
   const handelNavigate = () => {
     window.location.href = 'https://github.com/SHARIFULALAM2025'
   }
   return (
-    <Container>
-      <Link to="/">
+    <div>
+      <Container>
         <nav className="flex justify-between items-center p-3 bg-[rgba(255,255,255,1)]">
-          <div className="flex gap-2 items-center">
-            <figure>
-              <img
-                src="../logo.png"
-                alt="logo image"
-                className="md:w-[2.5rem] w-[2rem] h-[2rem] md:h-[2.5rem]"
-              />
-            </figure>
-            <h1
-              className=" font-bold text-[1rem] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent
+          <Link to='/'>
+            <div className="flex gap-2 items-center">
+              <figure>
+                <img
+                  src="../logo.png"
+                  alt="logo image"
+                  className="md:w-[2.5rem] w-[2rem] h-[2rem] md:h-[2.5rem]"
+                />
+              </figure>
+              <h1
+                className=" font-bold text-[1rem] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent
           "
-            >
-              HERO.IO
-            </h1>{' '}
-          </div>
+              >
+                HERO.IO
+              </h1>{' '}
+            </div>
+          </Link>
           <div className="md:flex hidden">
             <ul className={`flex gap-5`}>
               {navList.map((item, index) => (
@@ -85,8 +86,8 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-      </Link>
-    </Container>
+      </Container>
+    </div>
   )
 }
 

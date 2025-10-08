@@ -3,7 +3,7 @@ import Container from '../Container/Container';
 
 const Trending = () => {
     return (
-      <div>
+      <div className="">
         <Container>
           <div className="text-center ">
             {' '}
