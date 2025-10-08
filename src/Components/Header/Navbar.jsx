@@ -16,10 +16,10 @@ const Navbar = () => {
     window.location.href = 'https://github.com/SHARIFULALAM2025'
   }
   return (
-    <div>
+    <div className="bg-[rgba(255,255,255,1)]">
       <Container>
-        <nav className="flex justify-between items-center p-3 bg-[rgba(255,255,255,1)]">
-          <Link to='/'>
+        <nav className="flex justify-between items-center p-3 ">
+          <Link to="/">
             <div className="flex gap-2 items-center">
               <figure>
                 <img

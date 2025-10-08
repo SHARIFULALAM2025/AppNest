@@ -3,7 +3,7 @@
 [
   {
     "image": "https://i.ibb.co.com/r28FM6Dp/angular.jpg",
-    "title": "Angular is a modern TypeScript-based framework for building scalable, maintainable, and dynamic web applications efficiently",
+    "title": "Angular Application for Managing Inventory, Orders, Customers, Analytics, and Billing",
     "companyName": "Google",
     "id": 1,
     "description": "Angular is a powerful front-end framework built with TypeScript, designed to help developers create scalable single-page applications. It provides a component-based structure, built-in routing, form handling, and dependency injection. With strong tooling, performance optimization, and an active community, Angular simplifies enterprise-level development. It is used widely across industries for building interactive and maintainable web platforms.",
@@ -21,7 +21,7 @@
   },
   {
     "image": "https://i.ibb.co.com/HTtnxqP1/bootstrap.jpg",
-    "title": "Bootstrap provides responsive front-end components for creating mobile-first and visually consistent web interfaces quickly and easily",
+    "title": "Responsive Bootstrap Dashboard For Rapid Product Management And Seamless Collaboration",
     "companyName": "Twitter",
     "id": 2,
     "description": "Bootstrap is a widely-used open-source CSS framework designed for creating responsive, mobile-first web designs. It includes prebuilt components such as grids, buttons, modals, and navigation bars, enabling developers to build consistent layouts quickly. Its utility classes and extensive documentation make it ideal for beginners and professionals. Bootstrap ensures design consistency across different browsers and devices with minimal effort.",
@@ -39,7 +39,7 @@
   },
   {
     "image": "https://i.ibb.co.com/VscDF72/chakara.jpg",
-    "title": "Chakra UI delivers accessible React components with modular design for creating visually pleasing and consistent interfaces quickly",
+    "title": "Chakra UI Dashboard: Fast, Accessible Components Powering Modern Interfaces Seamlessly",
     "companyName": "Segun Adebayo",
     "id": 3,
     "description": "Chakra UI is a modern React component library focused on accessibility, flexibility, and ease of use. It offers a set of composable and themeable UI components built with style props for quick customization. Chakra simplifies building responsive and consistent designs while maintaining accessibility standards. Developers appreciate its lightweight nature, dark mode support, and compatibility with popular React frameworks.",
@@ -57,7 +57,7 @@
   },
   {
     "image": "https://i.ibb.co.com/Q3ZRbqwZ/chatgpt.jpg",
-    "title": "ChatGPT provides intelligent conversational experiences through advanced natural language processing powered by artificial intelligence models",
+    "title": "Intelligent ChatGPT App for Problem Solving, Learning, and Productivity Enhancement",
     "companyName": "OpenAI",
     "id": 4,
     "description": "ChatGPT is an advanced AI language model developed by OpenAI that generates human-like text responses in conversation. It can assist with coding, writing, learning, and automation tasks. ChatGPT understands context, maintains dialogue flow, and produces detailed, creative answers. Its capabilities are integrated into applications, websites, and APIs, transforming the way users interact with digital systems.",
@@ -75,7 +75,7 @@
   },
   {
     "image": "https://i.ibb.co.com/Q390SJjT/dasiui.jpg",
-    "title": "DaisyUI extends Tailwind CSS with prebuilt components to create beautiful interfaces faster and with minimal custom styling",
+    "title": "Lightweight Component Library for Fast Beautiful Interfaces Today",
     "companyName": "DaisyUI Community",
     "id": 5,
     "description": "DaisyUI is a Tailwind CSS plugin that adds ready-to-use UI components like buttons, modals, cards, and alerts. It simplifies front-end development by reducing repetitive styling work. DaisyUI promotes consistency, supports themes, and integrates seamlessly with Tailwind’s utility-first approach. Its customization options and light/dark modes make it a favorite among modern developers creating responsive web applications.",
@@ -93,7 +93,7 @@
   },
    {
     "image": "https://i.ibb.co.com/QvN9WT1F/figma.png",
-    "title": "Figma is a cloud-based design tool that allows collaborative interface, prototyping, and vector design work seamlessly online",
+    "title": "Collaborative Interface Design and Prototyping Platform for Modern Teams",
     "companyName": "Figma Inc",
     "id": 6,
     "description": "Figma is a popular cloud-based interface design and prototyping tool used for creating UI/UX designs collaboratively. It allows multiple users to edit and comment in real time, making teamwork seamless. Figma supports vector graphics, interactive prototyping, and plugin integrations, enabling designers and developers to streamline workflows. Its cross-platform nature eliminates compatibility issues and improves productivity for web and mobile projects.",
@@ -165,7 +165,7 @@
   },
   {
     "image": "https://i.ibb.co.com/YTLxtvs6/mongodb.png",
-    "title": "MongoDB is a scalable NoSQL database that stores flexible JSON-like documents for high-performance modern web and mobile applications",
+    "title": "MongoDB is a scalable NoSQL database that stores flexible JSON-like documents for ",
     "companyName": "MongoDB Inc",
     "id": 10,
     "description": "MongoDB is a leading NoSQL database designed for high-performance, flexible, and scalable data storage. It stores data in JSON-like documents, allowing dynamic schemas and easy integration with modern applications. MongoDB supports rich queries, indexing, aggregation, and horizontal scaling. Its flexible structure and cloud offerings make it ideal for web, mobile, and enterprise applications. Developers rely on MongoDB for fast access, reliability, and robust analytics.",
@@ -184,7 +184,7 @@
 
   {
     "image": " https://i.ibb.co.com/XZkkmhX2/images.jpg",
-    "title": "Tailwind CSS is a utility-first CSS framework that allows developers to rapidly build custom and responsive designs efficiently",
+    "title": "Tailwind CSS is a utility-first CSS framework that allows developers to rapidly ",
     "companyName": "Tailwind Labs",
     "id": 11,
     "description": "Tailwind CSS is a modern utility-first CSS framework that provides low-level classes for building custom designs without leaving HTML. It allows developers to create responsive layouts quickly and maintain design consistency across applications. With a highly customizable configuration, built-in plugins, and easy integration with frameworks like React and Vue, Tailwind CSS significantly speeds up front-end development workflows while keeping code maintainable.",
@@ -202,7 +202,7 @@
   },
   {
     "image": "https://i.ibb.co.com/kVhvX6DX/motion.jpg",
-    "title": "Framer Motion is a powerful React animation library for creating smooth, interactive, and visually engaging motion effects seamlessly",
+    "title": "Framer Motion is a powerful React animation library for creating smooth, ",
     "companyName": "Framer",
     "id": 12,
     "description": "Framer Motion is a popular React library used for creating declarative and fluid animations in web applications. It provides an easy-to-use API for complex animations, gestures, and interactive effects. Developers can animate components, transitions, and layouts effortlessly while maintaining high performance. With Framer Motion, web interfaces become more engaging and dynamic, improving user experience and enhancing overall application design.",
@@ -220,7 +220,7 @@
   },
   {
     "image": " https://i.ibb.co.com/W40qyZZt/netlify.jpg",
-    "title": "Netlify is a cloud-based platform that automates web deployment, hosting, and continuous integration for modern static sites effectively",
+    "title": "Netlify is a cloud-based platform that automates web deployment, hosting, and continuous ",
     "companyName": "Netlify Inc",
     "id": 13,
     "description": "Netlify is a cloud platform for deploying and hosting static websites and serverless functions. It offers continuous deployment from Git repositories, automated builds, global CDN hosting, and advanced analytics. Developers use Netlify to streamline their workflow, deploy websites instantly, and scale applications efficiently. Its integration with Jamstack architecture and modern front-end frameworks makes it a preferred choice for fast, reliable, and secure web hosting.",
@@ -238,7 +238,7 @@
   },
   {
     "image": " https://i.ibb.co.com/BHj8t8WW/next.jpg",
-    "title": "Next.js is a React framework that enables server-side rendering, static site generation, and optimized performance for scalable web apps",
+    "title": "Next.js is a React framework that enables server-side rendering, static site ",
     "companyName": "Vercel",
     "id": 14,
     "description": "Next.js is a powerful React framework designed for server-side rendering, static site generation, and building high-performance web applications. It offers built-in routing, API routes, and optimization features such as automatic code splitting and image handling. Developers can create SEO-friendly, fast-loading websites with minimal configuration. Next.js is widely adopted for production-ready applications due to its flexibility, reliability, and seamless integration with modern front-end tools.",
@@ -256,7 +256,7 @@
   },
   {
     "image": "https://i.ibb.co.com/LXFQszVp/node.jpg",
-    "title": "Node.js is an open-source runtime environment that executes JavaScript on servers and enables building scalable backend applications efficiently",
+    "title": "Node.js is an open-source runtime environment that executes JavaScript on servers ",
     "companyName": "OpenJS Foundation",
     "id": 15,
     "description": "Node.js is a powerful JavaScript runtime environment that allows developers to run JavaScript code on the server-side. It supports non-blocking, event-driven architecture, making it ideal for scalable and high-performance web applications. Node.js has a rich ecosystem of libraries through npm and can handle real-time applications, APIs, and microservices effectively. Its cross-platform capabilities make it a cornerstone of modern full-stack development.",
@@ -274,7 +274,7 @@
   },
   {
     "image": " https://i.ibb.co.com/yBfb7syJ/pisixo.jpg",
-    "title": "Pisixo is a modern design and development tool that helps teams collaborate efficiently on web and app interface projects quickly",
+    "title": "Pisixo is a modern design and development tool that helps teams collaborate ",
     "companyName": "Pisixo Inc",
     "id": 16,
     "description": "Pisixo is a collaborative web and app interface design tool that allows designers and developers to work together efficiently. It provides features for prototyping, design versioning, and project management. Pisixo supports cross-platform compatibility, real-time updates, and easy sharing of design assets. With intuitive tools and seamless workflow integration, teams can create interactive, responsive, and visually appealing applications faster than traditional methods.",
@@ -292,7 +292,7 @@
   },
   {
     "image": "https://i.ibb.co.com/MxBDfGRm/reacticon.jpg",
-    "title": "React Icons provides a large collection of popular icon sets for React applications to enhance UI design and improve usability quickly",
+    "title": "React Icons provides a large collection of popular icon sets for React ",
     "companyName": "React Community",
     "id": 17,
     "description": "React Icons is a popular library that allows developers to easily use thousands of icons from multiple icon sets in React applications. It supports FontAwesome, Material Design, and other collections. The library simplifies the integration of icons, providing scalable, customizable, and accessible icons for web projects. React Icons improves user interfaces, accelerates development, and ensures consistency across application design.",
@@ -310,7 +310,7 @@
   },
   {
     "image": "https://i.ibb.co.com/xq86rr05/vercell.png",
-    "title": "Vercel is a cloud platform for hosting modern web projects with seamless deployment, global CDN, and serverless backend support effectively",
+    "title": "Vercel is a cloud platform for hosting modern web projects with seamless deployment, ",
     "companyName": "Vercel Inc",
     "id": 18,
     "description": "Vercel is a cloud platform that specializes in hosting and deploying modern web applications. It offers continuous deployment from Git repositories, serverless functions, global CDN hosting, and analytics. Vercel integrates well with frameworks like Next.js and React, simplifying web development workflows. Its automated builds, fast performance, and scalability make it ideal for professional developers and teams aiming for high-quality, production-ready applications quickly.",
@@ -328,7 +328,7 @@
   },
   {
     "image": "https://i.ibb.co.com/J18KfwH/vite.jpg",
-    "title": "Vite is a fast, modern build tool that provides instant hot module replacement and optimized bundling for web development projects",
+    "title": "Vite is a fast, modern build tool that provides instant hot module replacement and ",
     "companyName": "Evan You",
     "id": 19,
     "description": "Vite is a next-generation frontend build tool that focuses on speed and performance. It provides instant hot module replacement (HMR), fast cold starts, and optimized bundling for production builds. Vite supports modern JavaScript frameworks like Vue, React, and Svelte, improving developer experience with minimal configuration. Its architecture enhances build times, productivity, and ensures efficient workflow management for web projects of all sizes.",
@@ -346,7 +346,7 @@
   },
   {
     "image": " https://i.ibb.co.com/XrZHBnVf/vue.png",
-    "title": "Vue.js is a progressive JavaScript framework for building interactive user interfaces and single-page applications efficiently with simplicity",
+    "title": "Vue.js is a progressive JavaScript framework for building interactive user ",
     "companyName": "Evan You",
     "id": 20,
     "description": "Vue.js is a progressive JavaScript framework that allows developers to build interactive user interfaces and single-page applications easily. It features a component-based architecture, reactive data binding, and a flexible ecosystem including Vue Router and Vuex. Vue.js simplifies front-end development while maintaining performance and scalability. Its simplicity, documentation, and community support make it ideal for beginners and professionals alike for modern web development.",
