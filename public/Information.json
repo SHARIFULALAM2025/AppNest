@@ -111,7 +111,7 @@
   },
   {
     "image": " https://i.ibb.co.com/DPgZj7jK/firebase1.jpg",
-    "title": "Firebase provides a complete suite of cloud-based backend services for building scalable web and mobile applications efficiently",
+    "title": "Firebase provides a complete suite of cloud-based backend services for building ",
     "companyName": "Google",
     "id": 7,
     "description": "Firebase is a comprehensive cloud-based platform that helps developers build web and mobile applications quickly. It offers services like real-time databases, authentication, hosting, cloud storage, and analytics. Firebase simplifies backend development, scales automatically, and integrates seamlessly with other Google services. Its SDKs support multiple platforms, making it a preferred choice for developers who want fast deployment, live data updates, and efficient app monitoring.",
@@ -129,7 +129,7 @@
   },
   {
     "image": " https://i.ibb.co.com/MDrHhvYR/github.jpg",
-    "title": "GitHub is a web-based platform for version control, collaboration, and source code management using Git repositories effectively",
+    "title": "GitHub is a web-based platform for version control, collaboration, and source code ",
     "companyName": "GitHub Inc",
     "id": 8,
     "description": "GitHub is the leading platform for software development, version control, and collaborative coding using Git repositories. It allows developers to host, review, and manage code efficiently. GitHub supports pull requests, issues tracking, CI/CD workflows, and collaborative project management. Its open-source ecosystem enables communities to contribute to projects globally. Developers leverage GitHub to ensure code quality, maintain history, and streamline team collaboration across multiple projects.",
@@ -147,7 +147,7 @@
   },
   {
     "image": "https://i.ibb.co.com/60rHs6WS/material.png",
-    "title": "Material UI provides a set of customizable React components following Google’s Material Design system for seamless user interfaces",
+    "title": "Material UI provides a set of customizable React components following Google’s ",
     "companyName": "MUI Team",
     "id": 9,
     "description": "Material UI is a popular React component library implementing Google’s Material Design guidelines. It provides prebuilt, customizable UI components such as buttons, forms, tables, and dialogs. Material UI allows developers to create visually consistent and responsive web applications quickly. It offers theme support, accessibility features, and integration with React’s ecosystem. The library reduces development time while maintaining modern and polished user interfaces for web projects.",

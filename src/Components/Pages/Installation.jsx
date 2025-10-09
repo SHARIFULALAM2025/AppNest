@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Container from '../Container/Container'
-import { toast, ToastContainer, } from 'react-toastify'
+import { toast, ToastContainer } from 'react-toastify'
 import InstallApp from './InstallApp'
 const Installation = () => {
   const [install, setInstall] = useState([])
@@ -25,15 +25,15 @@ const Installation = () => {
     let updateData = existingData.filter((item) => item.id !== id)
 
     setInstall(updateData)
-      localStorage.setItem('wishInstallation', JSON.stringify(updateData))
-      toast("app delete")
+    localStorage.setItem('wishInstallation', JSON.stringify(updateData))
+    toast('app delete')
   }
 
   return (
     <div className="bg-[#D9D9D9]">
       <Container>
         <InstallApp></InstallApp>
-        <div className="flex justify-between items-center">
+        <div className="flex md:justify-between justify-around items-center">
           <h1 className="text-[1.25rem] font-medium text-[rgba(0,25,49,1)]">
             Apps Found:{install.length}
           </h1>
@@ -51,26 +51,30 @@ const Installation = () => {
         </div>
         <div className="">
           {sortItem.map(
-            ({ image, title, downloads, ratingAvg, size,id }, index) => (
+            ({ image, title, downloads, ratingAvg, size, id }, index) => (
               <div key={index} className="">
-                <div className="bg-[rgba(255,255,255,1)] flex justify-between mt-4 items-center  p-[1.625rem] rounded-[.25rem]">
-                  <div className="flex items-center gap-[1rem]  ">
+                <div className="bg-[rgba(255,255,255,1)] md:flex justify-between gap-4 mt-4 items-center  md:p-[1.625rem] rounded-[.25rem] p-2">
+                  <div className="md:flex items-center gap-1 md:gap-[1rem]   ">
                     <div className="">
                       <figure>
-                        <img src={image} alt="" className="w-[5rem] h-[5rem] rounded-[8px]" />
+                        <img
+                          src={image}
+                          alt=""
+                          className="md:w-[5rem] md:h-[5rem] rounded-[8px] w-full bg-cover"
+                        />
                       </figure>
                     </div>
                     <div className="">
-                      <h1 className="text-[rgba(0,25,49,1)] text-[1.25rem] font-medium">
+                      <h1 className="text-[rgba(0,25,49,1)] text-[.5rem] md:text-[1.25rem] md:font-medium font-bold">
                         {title}
                       </h1>
-                      <div className="flex items-center gap-5">
-                        <div className="flex gap-3 items-center">
+                      <div className="flex items-center  gap-5">
+                        <div className="md:flex gap-1 md:gap-3 flex items-center ">
                           <figure>
                             <img
                               src="/icon-downloads.png"
                               alt=""
-                              className="w-5 h-5"
+                              className="md:h-5 h-2 w-2 md:w-5"
                             />
                           </figure>
 
@@ -78,9 +82,13 @@ const Installation = () => {
                             {downloads}M
                           </h3>
                         </div>
-                        <div className="flex gap-3 items-center">
+                        <div className="flex  gap-1 md:gap-3 items-center">
                           <figure>
-                            <img src="/star.png" alt="" className="h-5 w-5" />
+                            <img
+                              src="/star.png"
+                              alt=""
+                              className="md:h-5 h-2 w-2 md:w-5"
+                            />
                           </figure>
 
                           <h3 className=" text-[1rem] text-[rgba(255,136,17,1)] font-medium">
@@ -98,7 +106,8 @@ const Installation = () => {
                   <div className="">
                     <button
                       onClick={() => handelRemove(id)}
-                      className="px-4 py-3 bg-[rgba(0,211,144,1)] rounded-[.25rem]"
+                      className="md:px-4 px-1.5 md:py-3 py-1
+                       bg-[rgba(0,211,144,1)] rounded-[.25rem] text-[.5rem]"
                     >
                       Uninstall
                     </button>
@@ -106,8 +115,8 @@ const Installation = () => {
                 </div>
               </div>
             )
-                  )}
-                  <ToastContainer></ToastContainer>
+          )}
+          <ToastContainer></ToastContainer>
         </div>
       </Container>
     </div>

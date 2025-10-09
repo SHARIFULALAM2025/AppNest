@@ -46,16 +46,16 @@ const AppDetails = () => {
  }
 
   return (
-    <div className="bg-[#D9D9D9]">
+    <div className="bg-[#D9D9D9] ">
       <Container>
-        <div className="flex justify-between gap-6">
+        <div className="md:flex justify-between space-y-3 md:gap-6 p-2">
           <div className="">
             <figure>
-              <img src={image} alt="" className="" />
+              <img src={image} alt="" className="w-full bg-cover" />
             </figure>
           </div>
           <div className="">
-            <h1 className="text-[2rem] font-semibold text-[rgba(0,25,49,1)] ">
+            <h1 className="md:text-[2rem] text-xl font-semibold text-[rgba(0,25,49,1)] ">
               {title}
             </h1>
             <h1 className="text-[1.25rem] font-semibold text-[rgba(58,115,130,1)]">
@@ -65,37 +65,37 @@ const AppDetails = () => {
               </span>
             </h1>
             <div className="border border-t-2 border-t-[rgba(0,25,49,1)] opacity-[.2]"></div>
-            <div className="grid grid-cols-3">
+            <div className="grid md:grid-cols-3 space-y-3 mt-2 grid-cols-3">
               <div className="">
                 <figure>
-                  <img src="/icon-downloads.png" alt="" className="" />
+                  <img src="/icon-downloads.png" alt="" className="w-5 h-5" />
                 </figure>
-                <h1 className="text-[1rem] text-[rgba(0,25,49,1)] font-normal">
+                <h1 className="md:text-[1rem] text-xs text-[rgba(0,25,49,1)] font-normal">
                   Downloads
                 </h1>
-                <h3 className="md:text-[4rem] text-[2rem] text-[rgba(0,25,49,1)] font-extrabold">
+                <h3 className="md:text-[4rem] text-[1rem] text-[rgba(0,25,49,1)] font-extrabold">
                   {downloads}M
                 </h3>
               </div>
               <div className="">
                 <figure>
-                  <img src="/star.png" alt="" className="" />
+                  <img src="/star.png" alt="" className="w-5 h-5" />
                 </figure>
-                <h1 className="text-[1rem] text-[rgba(0,25,49,1)] font-normal">
+                <h1 className="md:text-[1rem] text-xs text-[rgba(0,25,49,1)] font-normal">
                   Average Ratings
                 </h1>
-                <h3 className="md:text-[4rem] text-[2rem] text-[rgba(0,25,49,1)] font-extrabold">
+                <h3 className="md:text-[4rem] text-[1rem] text-[rgba(0,25,49,1)] font-extrabold">
                   {ratingAvg}
                 </h3>
               </div>
               <div className="">
                 <figure>
-                  <img src="/icon-review.png" alt="" className="" />
+                  <img src="/icon-review.png" alt="" className="w-5 h-5" />
                 </figure>
-                <h1 className="text-[1rem] text-[rgba(0,25,49,1)] font-normal">
+                <h1 className="md:text-[1rem] text-xs text-[rgba(0,25,49,1)] font-normal">
                   Total Reviews
                 </h1>
-                <h3 className="md:text-[4rem] text-[2rem] text-[rgba(0,25,49,1)] font-extrabold">
+                <h3 className="md:text-[4rem] text-[1rem] text-[rgba(0,25,49,1)] font-extrabold">
                   {reviews}M
                 </h3>
               </div>
@@ -103,7 +103,7 @@ const AppDetails = () => {
             <button
               disabled={isDisable}
               onClick={handel}
-              className="bg-[rgba(0,211,144,1)] text-[rgba(0,25,49,1)] text-[1.25rem] rounded-[4px] px-16 py-8 "
+              className="bg-[rgba(0,211,144,1)] text-[rgba(0,25,49,1)] p-2 md:text-[1.25rem] rounded-[4px] px-3 py-1.5  md:px-5 md:py-3 "
             >
               {isDisable ? 'Installed' : `Install Now (${size} MB)`}
             </button>
@@ -112,10 +112,10 @@ const AppDetails = () => {
         {/*  */}
         {/*  */}
         <div className="">
-          <h1 className="text-[1.5rem] text-[rgba(0,25,49,1)] font-semibold">
+          <h1 className="text-[1.5rem] text-[rgba(0,25,49,1)] p-2 font-semibold">
             Description
           </h1>
-          <p className="text-[rgba(98,115,130,1)] text-[1.25rem] font-normal">
+          <p className="md:text-[rgba(98,115,130,1)] text-black text-xs p-2 md:text-[1.25rem] font-normal">
             {description}
           </p>
         </div>

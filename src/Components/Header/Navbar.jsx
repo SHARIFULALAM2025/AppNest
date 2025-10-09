@@ -16,7 +16,7 @@ const Navbar = () => {
     window.location.href = 'https://github.com/SHARIFULALAM2025'
   }
   return (
-    <div className="bg-[rgba(255,255,255,1)]">
+    <div className="md:bg-[rgba(255,255,255,1)]">
       <Container>
         <nav className="flex justify-between items-center p-3 ">
           <Link to="/">
@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
           {/* for mobile device */}
           {toggle && (
-            <div className="absolute md:hidden mt-32 ">
+            <div className="absolute md:hidden mt-44 bg-white p-3 rounded-lg ">
               <ul className={`flex-col gap-5 space-y-3 ml-3`}>
                 {navList.map((item, index) => (
                   <li

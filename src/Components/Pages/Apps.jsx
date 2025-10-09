@@ -28,7 +28,7 @@ const Apps = () => {
             <div className="">
               <label className="input">
                 <svg
-                  className="h-[1em] opacity-50"
+                  className="h-5 w-5 opacity-50"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
@@ -44,16 +44,17 @@ const Apps = () => {
                   </g>
                 </svg>
                 <input
+                  className='outline-none md:px-8 md:py-3 '
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                   type="search"
                   required
-                  placeholder="Search"
+                  placeholder="Search App"
                 />
               </label>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-[1rem] ">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-[1rem] md:mt-[1.75rem] ">
             {allFilterSearch.map((item, index) => (
               <SingleAllApp item={item} key={index}></SingleAllApp>
             ))}
