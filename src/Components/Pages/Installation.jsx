@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Container from '../Container/Container'
-
+import { toast, ToastContainer, } from 'react-toastify'
+import InstallApp from './InstallApp'
 const Installation = () => {
   const [install, setInstall] = useState([])
   const [sort, setSort] = useState('none')
@@ -24,12 +25,14 @@ const Installation = () => {
     let updateData = existingData.filter((item) => item.id !== id)
 
     setInstall(updateData)
-    localStorage.setItem('wishInstallation', JSON.stringify(updateData))
+      localStorage.setItem('wishInstallation', JSON.stringify(updateData))
+      toast("app delete")
   }
 
   return (
     <div className="bg-[#D9D9D9]">
       <Container>
+        <InstallApp></InstallApp>
         <div className="flex justify-between items-center">
           <h1 className="text-[1.25rem] font-medium text-[rgba(0,25,49,1)]">
             Apps Found:{install.length}
@@ -54,7 +57,7 @@ const Installation = () => {
                   <div className="flex items-center gap-[1rem]  ">
                     <div className="">
                       <figure>
-                        <img src={image} alt="" className="w-[5rem] h-[5rem]" />
+                        <img src={image} alt="" className="w-[5rem] h-[5rem] rounded-[8px]" />
                       </figure>
                     </div>
                     <div className="">
@@ -103,7 +106,8 @@ const Installation = () => {
                 </div>
               </div>
             )
-          )}
+                  )}
+                  <ToastContainer></ToastContainer>
         </div>
       </Container>
     </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import useAppData from '../Hooks/useAppData';
 import Container from '../Container/Container';
 import SingleAllApp from './SingleAllApp';
+import Application from './Application';
 
 const Apps = () => {
     const { allApp } = useAppData()
@@ -16,6 +17,7 @@ const Apps = () => {
     return (
       <div className="bg-[#D9D9D9]">
         <Container>
+          <Application></Application>
           <div className="flex justify-between items-center">
             <div className="">
               {' '}
