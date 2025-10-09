@@ -1,11 +1,113 @@
-import React from 'react';
+import { useEffect, useState } from 'react'
+import Container from '../Container/Container'
 
 const Installation = () => {
-    return (
-        <div>
-            <h1 className="">this is Installation</h1>
-        </div>
-    );
-};
+  const [install, setInstall] = useState([])
+  const [sort, setSort] = useState('none')
+  useEffect(() => {
+    const saveData = JSON.parse(localStorage.getItem('wishInstallation'))
+    if (saveData) {
+      setInstall(saveData)
+    }
+  }, [])
+  const sortItem = (() => {
+    if (sort === 'size-asc') {
+      return [...install].sort((a, b) => a.size - b.size)
+    } else if (sort === 'size-desc') {
+      return [...install].sort((a, b) => b.size - a.size)
+    } else {
+      return install
+    }
+  })()
+  const handelRemove = (id) => {
+    const existingData = JSON.parse(localStorage.getItem('wishInstallation'))
+    let updateData = existingData.filter((item) => item.id !== id)
 
-export default Installation;
+    setInstall(updateData)
+    localStorage.setItem('wishInstallation', JSON.stringify(updateData))
+  }
+
+  return (
+    <div className="bg-[#D9D9D9]">
+      <Container>
+        <div className="flex justify-between items-center">
+          <h1 className="text-[1.25rem] font-medium text-[rgba(0,25,49,1)]">
+            Apps Found:{install.length}
+          </h1>
+          <fieldset className="">
+            <select
+              value={sort}
+              onChange={(e) => setSort(e.target.value)}
+              className="px-4 py-3 border-[4px] text-[#627382] font-normal text-[1rem]  border-[rgba(210,210,210,1)]"
+            >
+              <option value="none">Sort By Size</option>
+              <option value="size-asc">Low-&gt;High</option>
+              <option value="size-desc">High-&gt;Low</option>
+            </select>
+          </fieldset>
+        </div>
+        <div className="">
+          {sortItem.map(
+            ({ image, title, downloads, ratingAvg, size,id }, index) => (
+              <div key={index} className="">
+                <div className="bg-[rgba(255,255,255,1)] flex justify-between mt-4 items-center  p-[1.625rem] rounded-[.25rem]">
+                  <div className="flex items-center gap-[1rem]  ">
+                    <div className="">
+                      <figure>
+                        <img src={image} alt="" className="w-[5rem] h-[5rem]" />
+                      </figure>
+                    </div>
+                    <div className="">
+                      <h1 className="text-[rgba(0,25,49,1)] text-[1.25rem] font-medium">
+                        {title}
+                      </h1>
+                      <div className="flex items-center gap-5">
+                        <div className="flex gap-3 items-center">
+                          <figure>
+                            <img
+                              src="/icon-downloads.png"
+                              alt=""
+                              className="w-5 h-5"
+                            />
+                          </figure>
+
+                          <h3 className=" text-[1rem] text-[rgba(0,211,144,1)] font-medium">
+                            {downloads}M
+                          </h3>
+                        </div>
+                        <div className="flex gap-3 items-center">
+                          <figure>
+                            <img src="/star.png" alt="" className="h-5 w-5" />
+                          </figure>
+
+                          <h3 className=" text-[1rem] text-[rgba(255,136,17,1)] font-medium">
+                            {ratingAvg}
+                          </h3>
+                        </div>
+                        <div className="">
+                          <span className="text-[rgba(98,115,130,1)] text-[1rem] font-normal">
+                            {size}MB
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="">
+                    <button
+                      onClick={() => handelRemove(id)}
+                      className="px-4 py-3 bg-[rgba(0,211,144,1)] rounded-[.25rem]"
+                    >
+                      Uninstall
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )
+          )}
+        </div>
+      </Container>
+    </div>
+  )
+}
+
+export default Installation

@@ -1,9 +1,15 @@
-import React from 'react'
-import { useParams } from 'react-router'
+import React, { useState } from 'react'
+import {  useParams } from 'react-router'
 import useAppData from '../Hooks/useAppData'
 import Container from '../Container/Container'
 
+import { toast, ToastContainer, } from 'react-toastify'
 const AppDetails = () => {
+    const [isDisable, setIsDisable] = useState(false)
+
+
+
+
   const { id } = useParams()
 
   const { allApp, loading } = useAppData()
@@ -19,7 +25,25 @@ const AppDetails = () => {
     reviews,
     companyName,
     description,
-  } = findData
+    size,
+  } = findData || {}
+
+    // local storage
+
+ const handel = () => {
+   setIsDisable(true)
+   toast('button clicked')
+
+   const existingData = JSON.parse(localStorage.getItem('wishInstallation'))
+   let updateData = []
+
+     if (existingData) {
+     updateData = [...existingData, findData]
+   } else {
+     updateData.push(findData)
+   }
+   localStorage.setItem('wishInstallation', JSON.stringify(updateData))
+ }
 
   return (
     <div className="bg-[#D9D9D9]">
@@ -76,8 +100,12 @@ const AppDetails = () => {
                 </h3>
               </div>
             </div>
-            <button className="bg-[rgba(0,211,144,1)] text-[rgba(0,25,49,1)] text-[1.25rem] rounded-[4px] px-16 py-8 ">
-              Install Now (291 MB)
+            <button
+              disabled={isDisable}
+              onClick={handel}
+              className="bg-[rgba(0,211,144,1)] text-[rgba(0,25,49,1)] text-[1.25rem] rounded-[4px] px-16 py-8 "
+            >
+              {isDisable ? 'Installed' : `Install Now (${size} MB)`}
             </button>
           </div>
         </div>
@@ -92,6 +120,8 @@ const AppDetails = () => {
           </p>
         </div>
       </Container>
+
+          <ToastContainer></ToastContainer>
     </div>
   )
 }

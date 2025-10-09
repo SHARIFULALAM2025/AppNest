@@ -8,7 +8,7 @@ const Banner = () => {
           <div className="space-y-12">
             <div className="flex items-center justify-center ">
               <div className="text-center">
-                <h1 className="md:text-[4.5rem]  font-bold">
+                <h1 className="md:text-[4.5rem] text-[#001931] font-bold">
                   We Build{' '}
                   <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
                     Productive
@@ -28,7 +28,7 @@ const Banner = () => {
               <div className="flex  items-center gap-3">
                 <a
                   href="https://play.google.com/store/games?hl=en"
-                  className="flex items-center md:px-16 md:py-8 rounded-[4px]  border-[rgba(210,210,210,1)] border-2 gap-3"
+                  className="flex items-center md:px-16 md:py-8 rounded-[4px]  border-[rgba(210,210,210,1)] border-2 gap-3 text-[rgba(0,25,49,1)] font-semibold text-[1rem]"
                 >
                   <figure>
                     <img src="../playStore.png" alt="" />
@@ -37,7 +37,7 @@ const Banner = () => {
                 </a>
                 <a
                   href="https://www.apple.com/app-store/"
-                  className="flex items-center md:px-16 md:py-8 rounded-[4px] border-[rgba(210,210,210,1)] border-2 gap-3"
+                  className="flex items-center md:px-16 md:py-8 rounded-[4px] border-[rgba(210,210,210,1)] border-2 gap-3 text-[rgba(0,25,49,1)] font-semibold text-[1rem]"
                 >
                   {' '}
                   <figure>
