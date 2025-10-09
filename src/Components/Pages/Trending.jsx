@@ -7,10 +7,10 @@ const Trending = () => {
         <Container>
           <div className="text-center ">
             {' '}
-            <h1 className="text-[3rem] text-[rgba(0,25,49,1)] font-bold">
+            <h1 className="md:text-[3rem] text-[1.5rem] text-[rgba(0,25,49,1)] font-bold">
               Trending Apps
             </h1>
-            <p className="text-[rgba(98,115,130,1)] text-[1.25rem] font-normal">
+            <p className="text-[rgba(98,115,130,1)] md:text-[1.25rem] text.8rem font-normal">
               Explore All Trending Apps on the Market developed by us
             </p>
           </div>
