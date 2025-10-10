@@ -41,9 +41,9 @@ const Navbar = () => {
               {navList.map((item, index) => (
                 <li
                   key={index}
-                  className="font-semibold text-[1rem] text-[rgba(0,0,0,0.9)]"
+                  className=" font-semibold text-[1rem] text-[rgba(0,0,0,0.9)]"
                 >
-                  <NavLink to={item.path}>{item.Name}</NavLink>
+                  <NavLink to={item.path}>{ item.icon}{item.Name}</NavLink>
                 </li>
               ))}
             </ul>
@@ -57,7 +57,7 @@ const Navbar = () => {
                     key={index}
                     className="font-semibold text-[1rem]  text-[rgba(0,0,0,0.9)]"
                   >
-                    <NavLink to={item.path}>{item.Name}</NavLink>
+                    <NavLink to={item.path}>{ item.icon}{item.Name}</NavLink>
                   </li>
                 ))}
               </ul>

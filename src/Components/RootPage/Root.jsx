@@ -13,7 +13,7 @@ const Root = () => {
     return () => clearTimeout(time)
   }, [location.pathname])
   return (
-    <div className="">
+    <div className="bg-[#D9D9D9]">
       <Navbar></Navbar>
       {loading && (
         <div className="flex justify-center relative items-center">
