@@ -13,9 +13,9 @@ const Installation = () => {
   }, [])
   const sortItem = (() => {
     if (sort === 'size-asc') {
-      return [...install].sort((a, b) => a.size - b.size)
+      return [...install].sort((a, b) => a.downloads - b.downloads)
     } else if (sort === 'size-desc') {
-      return [...install].sort((a, b) => b.size - a.size)
+      return [...install].sort((a, b) => b.downloads - a.downloads)
     } else {
       return install
     }
