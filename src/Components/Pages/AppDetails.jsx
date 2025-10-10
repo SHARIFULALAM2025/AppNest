@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import useAppData from '../Hooks/useAppData'
 import Container from '../Container/Container'
@@ -20,6 +20,14 @@ const AppDetails = () => {
   const { allApp, loading } = useAppData()
   const findData = allApp.find((item) => item.id === parseInt(id))
   const newData = findData?.ratings || []
+   useEffect(() => {
+     const existingData =
+       JSON.parse(localStorage.getItem('wishInstallation')) || []
+     const exist = existingData.some((item) => item.id === parseInt(id))
+     if (exist) {
+       setIsDisable(true)
+     }
+   }, [id])
   if (loading) {
     return <p>loading...</p>
   }
@@ -34,17 +42,17 @@ const AppDetails = () => {
     size,
   } = findData || {}
   // local storage
-  
+
+
+
+
   const handel = () => {
     setIsDisable(true)
     toast.success('App installed')
     const existingData = JSON.parse(localStorage.getItem('wishInstallation'))
     let updateData = []
     if (existingData) {
-      const exist = existingData.some(item => item.id === parseInt(id))
-      if (exist) {
-        setIsDisable(false)
-      }
+
       updateData = [...existingData, findData]
     } else {
       updateData.push(findData)

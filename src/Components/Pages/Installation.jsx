@@ -28,7 +28,7 @@ const Installation = () => {
 
     setInstall(updateData)
     localStorage.setItem('wishInstallation', JSON.stringify(updateData))
-    toast.success('App delete !')
+    toast.success('App Uninstall !')
   }
 
   return (
