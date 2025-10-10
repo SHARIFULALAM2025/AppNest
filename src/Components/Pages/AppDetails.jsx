@@ -43,9 +43,6 @@ const AppDetails = () => {
   } = findData || {}
   // local storage
 
-
-
-
   const handel = () => {
     setIsDisable(true)
     toast.success('App installed')
