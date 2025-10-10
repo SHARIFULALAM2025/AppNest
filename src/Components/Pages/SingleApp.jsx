@@ -6,7 +6,7 @@ const SingleApp = ({ app }) => {
     return (
       <div>
         <Link to={`/allApp/${id}`}>
-          <div className=" bg-[rgba(255,255,255,1)] rounded-[4px] h-[27rem]">
+          <div className=" bg-[rgba(255,255,255,1)] rounded-[4px] h-[27rem] hover:scale-105 transition ease-in-out">
             <div className="p-[1rem] space-y-3">
               <figure>
                 <img
