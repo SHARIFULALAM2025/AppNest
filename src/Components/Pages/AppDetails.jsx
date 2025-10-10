@@ -1,26 +1,25 @@
 import React, { useState } from 'react'
-import {  useParams } from 'react-router'
+import { useParams } from 'react-router'
 import useAppData from '../Hooks/useAppData'
 import Container from '../Container/Container'
 
-import { toast, ToastContainer, } from 'react-toastify'
- import {
-   Bar,
-   CartesianGrid,
-   Legend,
-
-   Tooltip,
-   XAxis,
-   YAxis,
-   ResponsiveContainer,
-   ComposedChart,
- } from 'recharts'
+import { toast, ToastContainer } from 'react-toastify'
+import {
+  Bar,
+  CartesianGrid,
+  Legend,
+  Tooltip,
+  XAxis,
+  YAxis,
+  ResponsiveContainer,
+  ComposedChart,
+} from 'recharts'
 const AppDetails = () => {
-    const [isDisable, setIsDisable] = useState(false)
+  const [isDisable, setIsDisable] = useState(false)
   const { id } = useParams()
   const { allApp, loading } = useAppData()
   const findData = allApp.find((item) => item.id === parseInt(id))
-  const newData = findData?.ratings||[]
+  const newData = findData?.ratings || []
   if (loading) {
     return <p>loading...</p>
   }
@@ -34,19 +33,25 @@ const AppDetails = () => {
     description,
     size,
   } = findData || {}
-    // local storage
- const handel = () => {
-   setIsDisable(true)
-   toast('button clicked')
-   const existingData = JSON.parse(localStorage.getItem('wishInstallation'))
-   let updateData = []
-     if (existingData) {
-     updateData = [...existingData, findData]
-   } else {
-     updateData.push(findData)
-   }
-   localStorage.setItem('wishInstallation', JSON.stringify(updateData))
- }
+  // local storage
+  
+  const handel = () => {
+    setIsDisable(true)
+    toast.success('App installed')
+    const existingData = JSON.parse(localStorage.getItem('wishInstallation'))
+    let updateData = []
+    if (existingData) {
+      const exist = existingData.some(item => item.id === parseInt(id))
+      if (exist) {
+        setIsDisable(false)
+      }
+      updateData = [...existingData, findData]
+    } else {
+      updateData.push(findData)
+    }
+    localStorage.setItem('wishInstallation', JSON.stringify(updateData))
+
+  }
 
   return (
     <div className="bg-[#D9D9D9] ">

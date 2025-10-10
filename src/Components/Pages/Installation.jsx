@@ -20,13 +20,15 @@ const Installation = () => {
       return install
     }
   })()
+
+
   const handelRemove = (id) => {
     const existingData = JSON.parse(localStorage.getItem('wishInstallation'))
     let updateData = existingData.filter((item) => item.id !== id)
 
     setInstall(updateData)
     localStorage.setItem('wishInstallation', JSON.stringify(updateData))
-    toast('app delete')
+    toast.success('App delete !')
   }
 
   return (

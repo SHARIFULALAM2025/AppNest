@@ -3,14 +3,15 @@ import { FaXTwitter } from 'react-icons/fa6'
 import { IoLogoLinkedin } from 'react-icons/io5'
 import { RiFacebookCircleLine } from 'react-icons/ri'
 import Container from '../Container/Container';
-import { Link } from 'react-router';
-
+import { Link, NavLink } from 'react-router';
+import { navList } from '../Header/NavData';
+import '../../App.css'
 const Footer = () => {
     return (
       <footer className="bg-[rgba(0,25,49,1)]">
         <Container>
           <div className="flex justify-between ">
-            <Link to='/'>
+            <Link to="/">
               {' '}
               <div className="flex gap-2 items-center">
                 <figure>
@@ -28,6 +29,18 @@ const Footer = () => {
                 </h1>{' '}
               </div>
             </Link>
+            <div className="">
+              <ul className={`flex-col gap-5 space-y-5`}>
+                {navList.map((item, index) => (
+                  <li
+                    key={index}
+                    className="font-semibold text-[1rem] text-white hover:underline hover:text-green-700 "
+                  >
+                    <NavLink to={item.path}>{item.Name}</NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
             <div className="text-white space-y-3">
               <h1 className="font-medium text-[rgba(255,255,255,1)] text-[1.25rem]">
                 Social Links
