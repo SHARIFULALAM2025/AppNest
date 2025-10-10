@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="flex gap-2 items-center">
               <figure>
                 <img
-                  src="../logo.png"
+                  src="/logo.png"
                   alt="logo image"
                   className="md:w-[2.5rem] w-[2rem] h-[2rem] md:h-[2.5rem]"
                 />
@@ -69,7 +69,7 @@ const Navbar = () => {
               onClick={handelNavigate}
               className="flex items-center gap-2.5 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] md:px-4 px-3 md:py-3 py-2  rounded-[4px]"
             >
-              <img src="../fi_2111432.png" alt="" />
+              <img src="/fi_2111432.png" alt="" />
               <span className="text-[rgba(255,255,255,1)] text-[1rem] font-semibold">
                 Contribute
               </span>

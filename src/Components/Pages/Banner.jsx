@@ -30,7 +30,7 @@ const Banner = () => {
                 className="flex items-center px-4 py-2 md:px-6 md:py-3 rounded-[4px]  border-[rgba(210,210,210,1)] border-2 gap-3 text-[rgba(0,25,49,1)]  font-semibold text-[1rem]"
               >
                 <figure>
-                  <img src="../playStore.png" alt="w-5 h-5" />
+                  <img src="/playStore.png" alt="w-5 h-5" />
                 </figure>
                 Google Play
               </a>
@@ -40,14 +40,14 @@ const Banner = () => {
                 className="flex items-center px-4 py-2 md:px-6 md:py-3 rounded-[4px]  border-[rgba(210,210,210,1)] border-2 gap-3 text-[rgba(0,25,49,1)]  font-semibold text-[1rem]"
               >
                 <figure>
-                  <img src="../appIcon.png" alt="w-5 h-5" />
+                  <img src="/appIcon.png" alt="w-5 h-5" />
                 </figure>
                 App Store
               </a>
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img src="../hero.png" alt="" className="" />
+            <img src="/hero.png" alt="" className="" />
           </div>
         </div>
       </Container>

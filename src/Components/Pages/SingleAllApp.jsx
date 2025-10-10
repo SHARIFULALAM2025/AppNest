@@ -22,13 +22,13 @@ const SingleAllApp = ({ item }) => {
             <div className="flex justify-between">
               <button className="flex items-center px-2.5 py-1.5 bg-[rgba(241,245,232,1)] rounded-[4px] text-[rgba(0,211,144,1)] gap-2  text-[1rem] font-medium">
                 <figure>
-                  <img src="../icon-downloads.png" alt="" className="h-6 w-6" />
+                  <img src="/icon-downloads.png" alt="" className="h-6 w-6" />
                 </figure>
                 {downloads}M
               </button>
               <button className="flex px-2.5 py-1.5 bg-[rgba(241,245,232,1)] rounded-[4px] items-center gap-2 text-[rgba(255,136,17,1)] text-[1rem] font-medium">
                 <figure>
-                  <img src="../icon-ratings.png" alt="" className="h-6 w-6" />
+                  <img src="/icon-ratings.png" alt="" className="h-6 w-6" />
                 </figure>
                 {ratingAvg}
               </button>
