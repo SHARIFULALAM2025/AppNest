@@ -4,16 +4,23 @@ import useAppData from '../Hooks/useAppData'
 import Container from '../Container/Container'
 
 import { toast, ToastContainer, } from 'react-toastify'
+ import {
+   Bar,
+   CartesianGrid,
+   Legend,
+
+   Tooltip,
+   XAxis,
+   YAxis,
+   ResponsiveContainer,
+   ComposedChart,
+ } from 'recharts'
 const AppDetails = () => {
     const [isDisable, setIsDisable] = useState(false)
-
-
-
-
   const { id } = useParams()
-
   const { allApp, loading } = useAppData()
   const findData = allApp.find((item) => item.id === parseInt(id))
+  const newData = findData?.ratings||[]
   if (loading) {
     return <p>loading...</p>
   }
@@ -27,16 +34,12 @@ const AppDetails = () => {
     description,
     size,
   } = findData || {}
-
     // local storage
-
  const handel = () => {
    setIsDisable(true)
    toast('button clicked')
-
    const existingData = JSON.parse(localStorage.getItem('wishInstallation'))
    let updateData = []
-
      if (existingData) {
      updateData = [...existingData, findData]
    } else {
@@ -110,6 +113,36 @@ const AppDetails = () => {
           </div>
         </div>
         {/*  */}
+        <h1 className=" text-2xl font-semibold p-2 text-[rgba(0,25,49,1)]">
+          Ratings
+        </h1>
+        <div className="space-y-3">
+          <div className=" md:h-80 h-60 ">
+            <ResponsiveContainer>
+              <ComposedChart
+                layout="vertical"
+                width={500}
+                height={400}
+                data={newData}
+                margin={{
+                  top: 20,
+                  right: 20,
+                  bottom: 20,
+                  left: 20,
+                }}
+              >
+                <CartesianGrid stroke="#f5f5f5" />
+                <XAxis type="number" />
+                <YAxis dataKey="name" type="category" reversed={true} />
+                <Tooltip />
+                <Legend />
+
+                <Bar dataKey="count" barSize={20} fill="#FF8811" />
+              </ComposedChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+        <div className="border border-t-2 border-t-[rgba(0,25,49,1)] opacity-[0.2]"></div>
         {/*  */}
         <div className="">
           <h1 className="text-[1.5rem] text-[rgba(0,25,49,1)] p-2 font-semibold">
@@ -120,8 +153,7 @@ const AppDetails = () => {
           </p>
         </div>
       </Container>
-
-          <ToastContainer></ToastContainer>
+      <ToastContainer></ToastContainer>
     </div>
   )
 }
